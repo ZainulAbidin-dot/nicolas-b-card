@@ -1,91 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Saudi Sourcing & Partnerships</title>
-  <style>
-    body {
-      font-family: "Arial", sans-serif;
-      background-color: #f9f9f9;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
-    .card {
-      background-color: #fff;
-      width: 600px;
-      padding: 40px 50px;
-      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-      border-radius: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .left {
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .logo {
-      width: 90px;
-      margin-bottom: 15px;
-    }
-    .company-name {
-      font-size: 22px;
-      color: #004d2b;
-      font-weight: 700;
-      line-height: 1.3;
-    }
-    .tagline {
-      color: #b68a2b;
-      font-weight: 600;
-      font-size: 16px;
-    }
-    .right {
-      text-align: right;
-    }
-    .name {
-      font-weight: 700;
-      font-size: 20px;
-      color: #004d2b;
-    }
-    .title {
-      color: #444;
-      font-size: 14px;
-      margin-bottom: 15px;
-    }
-    .contact {
-      font-size: 14px;
-      color: #004d2b;
-      line-height: 1.6;
-    }
-    .contact a {
-      color: #004d2b;
-      text-decoration: none;
-    }
-    .contact a:hover {
-      text-decoration: underline;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Info</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .profile-img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #ddd;
+            margin-top: -70px;
+        }
+
+        .contact-card {
+            border-radius: 15px;
+            padding: 30px;
+            background-color: #f8f9fa;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-card h3 {
+            font-weight: 600;
+        }
+
+        .contact-card .btn {
+            width: 100%;
+        }
+
+        .contact-info {
+            margin-top: 15px;
+        }
+
+        .contact-info th {
+            width: 200px;
+        }
+
+        .useremail {
+            display: flex;
+            flex-direction: column;
+        }
+
+        table tr {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .col-table {
+          display: flex;
+          flex-direction: column;
+          /* padding: 1rem; */
+        }        
+        
+        .column-table {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 1rem;
+        }
+        
+        .col-table div {
+          display: flex;
+          
+          justify-content: space-between;
+          /* flex-direction: column; */
+        }
+        
+        /* Ensure text is responsive */
+        @media (max-width: 768px) {
+            .contact-card {
+                width: 100%;
+            }
+            .contact-info th {
+                width: auto;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="card">
-    <div class="left">
-      <!-- <img src="WhatsApp Image 2025-10-15 at 15.59.35_538d1fa9.jpg" alt="Logo" class="logo" /> -->
-      <div class="company-name">SAUDI SOURCING</div>
-      <div class="tagline">& PARTNERSHIPS</div>
-    </div>
-    <div class="right">
-      <div class="name">NICOLAS EID</div>
-      <div class="title">SALES MANAGER</div>
-      <div class="contact">
-        00966 54 751 9008<br />
-        <a href="mailto:neid@saudisp.net">neid@saudisp.net</a><br />
-        <a href="http://www.saudisp.net" target="_blank">www.saudisp.net</a>
+
+<div class="container d-flex justify-content-center align-items-center min-vh-100">
+    <div class="card contact-card" style="width: 25rem; margin-top: 5rem; margin-bottom: 2rem;">
+        <!-- Profile Image -->
+        <div class="text-center">
+            <!-- <img src="https://lh3.googleusercontent.com/d/1kxkRJRUeSoRSnG_D4X6cX_Q_wUfzs0FK" alt="Profile Image" class="profile-img"> -->
+        </div>
+
+        <!-- Contact Info -->
+        <div class="text-center">
+            <h3>Nicolas Eid</h3>
+            <p class="text-muted">Sales Manager</p>
+        </div>
+        <div class="contact-info">
+          <table class="table table-borderless">
+              <!-- Basic Contact Information -->
+              <tr>
+                  <th>Phone (Mobile)</th>
+                  <td><a href="tel:+966547519008">+966547519008</a></td>
+              </tr>
+              <tr>
+                  <th>Email</th>
+                  <td>
+                      <div class="useremail">
+                          <a href="mailto:neid@saudisp.net">neid@saudisp.net</a><br>
+                      </div>
+                  </td>
+              </tr>
+              <tr>
+                  <th>Website</th>
+                  <td><a href="https://www.saudisp.net/" target="_blank">www.saudisp.net</a></td>
+              </tr>
+              <tr>
+                  <th>Company</th>
+                  <td>Saudi Sourcing & Partnership</td>
+              </tr>
+              <tr>
+                  <th>Job Title</th>
+                  <td>Sales Manager</td>
+              </tr>
+              <!-- <tr>
+                  <th>Phone (Office)</th>
+                  <td><a href="tel:+966114803338">+966114803338</a></td>
+              </tr> -->
+              <tr>
+                  <th>Address</th>
+                  <td>Building#5682, Makkah Road, East Um Al Hammam
+                    <br>
+                    RGUA5682, Unit no. 1 , Ar Riyadh</td>
+              </tr>
+      
+              <!-- Address Information in two columns -->
+              <tr>
+                  <th>Post Code</th>
+                  <td>12321</td>
+              </tr>
+              <tr>
+                  <th>City</th>
+                  <td>Riyadh</td>
+              </tr>    
+      
+              <tr>
+                  <th>State</th>
+                  <td>Riyadh</td>
+              </tr>
+              <tr>
+                  <th>Country</th>
+                  <td>Kingdom of Saudi Arabia</td>
+              </tr>
+          </table>
       </div>
+      
+
+        <!-- Save as Contact Button -->
+        <div class="text-center">
+            <!-- vCard file for download -->
+            <a href="data:text/vcard;charset=utf-8,BEGIN:VCARD%0AVERSION:4.0%0AN%3AEid%3B%20Nicolas%0AEMAIL%3Aneid%40saudisp.net%0ATEL%3BTYPE%3Dcell%3A%2B966547519008%0ATEL%3BTYPE%3Dwork%3A%2B966114803338%0AADR%3BTYPE%3Dhome%3A%3BBuilding%235682%2C%20Makkah%20Road%2C%20East%20Um%20Al%20Hammam%2C%20Riyadh%2C%20Saudi%20Arabia%0AURL%3Ahttps%3A%2F%2Fwww.saudisp.net%2F%0AORG%3ASaudi%20Sourcing%20%26%20Partnership%0ATITLE%3ASales%20Manager%0APHOTO%3BTYPE%3DJPEG%3BVALUE%3DURI%3Ahttps%3A%2F%2Flh3.googleusercontent.com%2Fd%2F1WKcaxF0ZBl37sGU-hvSNPDnc_fvEQ8gN%0AEND:VCARD" 
+            download="contact.vcf" class="btn btn-primary save-btn mb-3">
+                Save Contact
+            </a>
+
+         
+         
+        
+            <!-- Open Contact (on mobile, this will open in native contact app) -->
+            <a href="tel:+966547519008" class="btn btn-success mb-3">
+                Call Mobile
+            </a>
+            <a href="mailto:neid@saudisp.net" class="btn btn-info">
+                Send Email
+            </a>
+        </div>
     </div>
-  </div>
+</div>
+
+<!-- Bootstrap JS and dependencies -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
